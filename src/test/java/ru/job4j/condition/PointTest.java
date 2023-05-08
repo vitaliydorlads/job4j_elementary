@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class PointTest {
     @Test
-        public void when00to20then2() {
+        public void when00to20then4() {
             int x1 = 0;
             int y1 = 3;
             int x2 = 2;
