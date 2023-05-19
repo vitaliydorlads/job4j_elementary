@@ -16,10 +16,10 @@ class MaxTest {
 
     @Test
     public void whenMax4To1Then4() {
-        int left = 5;
+        int left = 4;
         int right = 1;
         int result = Max.max(left, right);
-        int expected = 5;
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 
