@@ -11,7 +11,9 @@ public class Max {
     public static void main(String[] args) {
         int a = max(1, 2);
         int b = max(3, 3);
+        int c = max(4, 1);
         System.out.println(a);
         System.out.println(b);
+        System.out.println(c);
     }
 }

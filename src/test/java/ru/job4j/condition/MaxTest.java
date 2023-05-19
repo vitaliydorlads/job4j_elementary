@@ -15,6 +15,15 @@ class MaxTest {
     }
 
     @Test
+    public void whenMax4To1Then4() {
+        int left = 4;
+        int right = 1;
+        int result = Max.max(left, right);
+        int expected = 4;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     public void whenMax3To3Then3() {
         int left = 3;
         int right = 3;
