@@ -19,11 +19,11 @@ public class LogicNot {
     }
 
     public static boolean notEvenAndPositive(int num) {
-        return notEven(num) && isPositive(num); //проверяет, что число нечетное и положительное;
+        return notEven(num) && isPositive(num);
     }
 
     public static boolean evenOrNotPositive(int num) {
-        return isEven(num) || notPositive(num); // проверяет, что число четное или не положительное.
+        return isEven(num) || notPositive(num);
     }
 
     public static void main(String[] args) {
