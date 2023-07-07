@@ -1,13 +1,21 @@
 package ru.job4j.array;
 
 public class FindLoop {
-
     public static int indexOf(int[] data, int el) {
         int rst = -1;
-        for (int index = 0; index < data.length; index++) {
-            if (data[index] == el) {
-                rst = index;
-                break;
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] == el) {
+                return i;
+            }
+        }
+        return rst;
+    }
+
+    public static int indexInRange(int[] data, int el, int start, int finish) {
+        int rst = -1;
+        for (int x = start; x <= finish; x++) {
+            if (data[x] == el) {
+                return x;
             }
         }
         return rst;
