@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class MinDiapasonTest {
+class MinDiapasonnTest {
 
     @Test
     public void whenFirstMin() {
