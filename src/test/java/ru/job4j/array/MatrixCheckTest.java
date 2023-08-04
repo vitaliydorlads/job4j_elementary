@@ -29,4 +29,8 @@ class MatrixCheckTest {
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isTrue();
     }
+
+    @Test
+    void monoVertical() {
+    }
 }
