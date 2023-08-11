@@ -130,7 +130,7 @@ class MatrixCheckTest {
     }
 
     @Test
-    public void whenDataDiagMonoIsTrueThenFalse() {
+    public void whenDataDiagonalMonoIsTrueThenFalse() {
         char[][] input = {
                 {'X', ' ', ' ', ' ', ' '},
                 {' ', 'X', ' ', ' ', ' '},
