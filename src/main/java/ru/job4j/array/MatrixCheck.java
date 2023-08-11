@@ -3,7 +3,7 @@ package ru.job4j.array;
 public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
-        for (int i = row; i < board.length; i++) {
+        for (int i = 0; i < board.length; i++) {
             if (board[row][i] != 'X') {
                 result = false;
                 break;
@@ -33,8 +33,8 @@ public class MatrixCheck {
 
     public static boolean isWin(char[][] board) {
         boolean result = false;
-        for (int i = 0; i < 5; i++) {
-            if (monoVertical(board, i) || monoHorizontal(board, 2)) {
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 'X' && (monoVertical(board, i) || monoHorizontal(board, i))) {
                 result = true;
                 break;
             }
