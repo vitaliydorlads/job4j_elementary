@@ -1,7 +1,6 @@
 package ru.job4j.condition;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 public class PointTest {
