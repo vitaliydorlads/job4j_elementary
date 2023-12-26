@@ -1,18 +1,35 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class PointTest {
 
     @Test
-        public void when00to20then7dot28() {
-            int x1 = 0;
-            int y1 = 0;
-            int x2 = 2;
-            int y2 = 7;
-            double expected = 7.28;
-            double out = Point.distance(x1, y1, x2, y2);
-            Assert.assertEquals(expected, out, 0.01);
+    public void when00to02then2dot0() {
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double expectedDistance = 2.0;
+        double actualDistance = a.distance(b);
+        assertEquals(expectedDistance, actualDistance, 0.001);
+    }
+
+    @Test
+    public void when00to27then7dot28() {
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 7);
+        double expectedDistance = 7.28;
+        double actualDistance = a.distance(b);
+        assertEquals(expectedDistance, actualDistance, 0.001);
+    }
+
+    @Test
+    public void when00to67then9dot21() {
+        Point a = new Point(0, 0);
+        Point b = new Point(6, 7);
+        double expectedDistance = 9.21;
+        double actualDistance = a.distance(b);
+        assertEquals(expectedDistance, actualDistance, 0.01);
     }
 }
