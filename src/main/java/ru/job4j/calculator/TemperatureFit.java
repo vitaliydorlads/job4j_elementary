@@ -17,3 +17,4 @@ public class TemperatureFit {
         System.out.println("Ideal temperature for meat is " + meatTemp + "°C");
     }
 }
+
