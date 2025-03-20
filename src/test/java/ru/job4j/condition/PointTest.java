@@ -23,7 +23,7 @@ class PointTest {
         int x2 = 0, y2 = 2;
         Point a = new Point(x1, y1);
         Point b = new Point(x2, y2);
-        double res = a.distance(b)
+        double res = a.distance(b);
         double expected = 1.0;
         assertThat(res).isEqualTo(expected);
     }
