@@ -1,22 +1,32 @@
 package ru.job4j.condition;
 
 public class Point {
-    private int x;
-    private int y;
+    private int z;
+    private final int x;
+    private final int y;
 
-    Point(int first, int second) {
+    public Point(int first, int second) {
         this.x = first;
         this.y = second;
+    }
+
+    public Point(int x, int y, int z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
 
     public double distance(Point that) {
         return Math.sqrt(Math.pow(that.x - this.x, 2) + Math.pow(that.y - this.y, 2));
     }
 
+    public double distance3d(Point that) {
+        return Math.sqrt(Math.pow((that.x - this.x), 2) + Math.pow((that.y - this.y), 2) + Math.pow((that.z - this.z), 2));
+    }
+
     public static void main(String[] args) {
-        Point a = new Point(-2, -2);
-        Point b = new Point(2, 2);
-        double distance = a.distance(b);
-        System.out.println(distance);
+        Point i = new Point(10, 5, 3);
+        Point z = new Point(7, 6, 5);
+        System.out.println(i.distance3d(z));
     }
 }
