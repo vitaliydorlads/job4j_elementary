@@ -6,7 +6,7 @@ public class Reduce {
     public void to(int[] array) {
          this.array = array;
     }
-    // компилятор видел только переменную в методе. Добавил this чтобы была работа с полем.
+    /* компилятор видел только переменную в методе. Добавил this чтобы была работа с полем.*/
 
     public void print() {
         for (int index : array) {
